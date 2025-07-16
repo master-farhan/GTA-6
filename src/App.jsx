@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { FaArrowDownLong } from "react-icons/fa6";
+import bg from "./assets/bg.png"
+import sky from "./assets/sky.png"
+import girlbg from "./assets/girlbg.png"
+import imag from "./assets/imag.png"
+import ps5 from "./assets/ps5.png"
+import logo18 from "./assets/logo18.png"
 
 const App = () => {
   let [showContent, setShowContent] = useState(false);
@@ -123,7 +129,7 @@ const App = () => {
           </defs>
 
           <image
-            href="./bg.png"
+            href={bg}
             width="800"
             height="600"
             preserveAspectRatio="xMidYMid slice"
@@ -153,12 +159,12 @@ const App = () => {
             {/* imagesdiv */}
             <div className="imagesdiv relative w-full h-screen overflow-hidden">
               <img
-                src="./sky.png"
+                src={sky}
                 alt="sky"
                 className="sky scale-130 absolute top-0 left-0 w-full h-full object-cover"
               />
               <img
-                src="./bg.png"
+                src={bg}
                 alt="bg"
                 className="bg scale-120 absolute top-0 left-0 w-full h-full object-cover"
               />
@@ -175,7 +181,7 @@ const App = () => {
               </div>
 
               <img
-                src="./girlbg.png"
+                src={girlbg}
                 alt="girlbg"
                 className="char absolute left-1/2 -translate-x-1/2 -bottom-[20vw] w-full lg:w-1/3 scale-120"
               />
@@ -191,7 +197,7 @@ const App = () => {
               </div>
               <img
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-12 lg:h-[5vw]"
-                src="./ps5.png"
+                src={ps5}
                 alt=""
               />
             </div>
@@ -203,7 +209,7 @@ const App = () => {
               <div className="limg w-full lg:w-1/2 h-100 lg:h-full relative">
                 <img
                   className="absolute top-1/2 bottom-0 object-cover left-1/2 h-full scale-120 -translate-1/2"
-                  src="./public/imag.png"
+                  src={imag}
                   alt=""
                 />
               </div>
